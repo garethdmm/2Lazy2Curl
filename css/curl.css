@@ -86,3 +86,42 @@ p.help {
 input {
   padding: 5px;
 }
+
+#credits-container {
+  position: fixed;
+  bottom: 10px;
+  right: 13px;
+  font-size: 16pt;
+  /*width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;*/
+}
+
+.tooltip a {
+  display: inline;
+  color: black;
+}
+
+.tip-able {
+  cursor: pointer;
+}
+
+/* simple css-based tooltip */
+.tooltip {
+  background-color:#eee;
+  border:1px solid #fff;
+  padding:10px 15px;
+  width: 340px;
+  display: none;
+
+  /* text styling */
+  color:#000;
+  text-align:left;
+  font-size:16pt;
+  line-height: 1.5;
+
+  /* outline radius for mozilla/firefox only */
+  -moz-box-shadow:0 0 10px #000;
+  -webkit-box-shadow:0 0 10px #000;
+}

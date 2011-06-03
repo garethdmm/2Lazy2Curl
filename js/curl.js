@@ -3,6 +3,15 @@ function textInput(name, value) {
 }
 
 $(document).ready(function() {
+  $("#credits-container").tooltip({
+    delay: 500,
+    effect: 'fade',
+    position: 'top left',
+    events: {
+      def: 'click, mouseout'
+    }
+  });
+
   $('#submit').click(function() {
     url = $('#url-input').val();
 

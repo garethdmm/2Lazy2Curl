@@ -5,6 +5,7 @@
 <link rel='stylesheet' type='text/css' href='css/curl.css'/>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="http://cdn.jquerytools.org/1.2.5/jquery.tools.min.js"></script>
 <script type='text/javascript' src='js/curl.js'></script>
 
 </head>
@@ -13,7 +14,7 @@
 
 <div id='curl-base'>
   <div id='curl-splash'>
-    <h1>2Lazy2Curl</h1>
+    <h1 class='tip-able' title='tooltip'>2Lazy2Curl</h1>
     <h2>Curl is hard, and command lines are scary. Now you can make well-formed HTTP Get and POST requests straight from your browser<h2>
     <p class='help'>1. Pick your target URL and HTTP method</p>
     <p id='targets-input'>
@@ -40,6 +41,14 @@
     </form>
     <a href='#' id='new-param'>+</a>
     <p>3. <a href='#' id='submit'>DO IT</a></p>
+
+  </div>
+
+  <div class='tip-able' id='credits-container'>
+    <a id='credits' href='#'>Credits</a>
+  </div>
+  <div class='tooltip' style='text-align: right'>
+    Idea and code by <a href='http://www.garethmacleod.com'>Gareth</a>. Design advice, fonts, and background by <a href='http://howlettstudios.com'>Christopher Howlett</a>. Motivation courtesy academic frustration.
   </div>
 
   <form id='post-form'>
