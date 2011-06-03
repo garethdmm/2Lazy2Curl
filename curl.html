@@ -1,11 +1,11 @@
 <html>
 <head>
 
-<link rel='stylesheet' type='text/css' href='reset.css'/>
-<link rel='stylesheet' type='text/css' href='curl.css'/>
+<link rel='stylesheet' type='text/css' href='css/reset.css'/>
+<link rel='stylesheet' type='text/css' href='css/curl.css'/>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-<script type='text/javascript' src='curl.js'></script>
+<script type='text/javascript' src='js/curl.js'></script>
 
 </head>
 
@@ -20,8 +20,8 @@
       <input id='url-input' type='text' value='http://google.com/search'/>
     </p>
     <p id='method-input'>
-      Get <input name='method' type='radio'/> 
-      Post <input name='method' type='radio'/>
+      Post <input id='post' class='method' name='method' checked='checked' type='radio'/>
+      Get <input id='get' class='method' name='method' type='radio'/> 
     </p>
     <p class='help'>2. Enter the parameters of the request.</p>
     <form id='input-form' method='post'>

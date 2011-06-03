@@ -5,9 +5,13 @@ function textInput(name, value) {
 $(document).ready(function() {
   $('#submit').click(function() {
     url = $('#url-input').val();
-    method = $('#method-input').val();
 
-    $('#post-form').attr('method', method);
+    $('input.method').each(function() {
+      if ($(this).attr('checked') == 'checked') {
+        $('#post-form').attr('method', $(this).attr('id'));
+      }
+    });
+
     $('#post-form').attr('action', url);
     
     $('.key-val-pair').each(function(index, element) {
@@ -17,7 +21,7 @@ $(document).ready(function() {
       $('#post-form').append(textInput(name, value));
     });
 
-    $('#post-submit').click()
+    $('#post-submit').click();
   });
 
   $('#new-param').click(

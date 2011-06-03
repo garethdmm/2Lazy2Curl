@@ -1,0 +1,33 @@
+application: curlclient
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+
+- url: /favicon.ico
+  static_files: images/favicon.ico
+  upload: images/favicon.ico
+
+- url: /
+  static_files: curl.html
+  upload: curl.html
+
+- url: /images
+  static_dir: images
+
+- url: /fonts
+  static_dir: fonts
+
+- url: /css
+  static_dir: css
+
+- url: /js
+  static_dir: js
+
+
+builtins:
+- remote_api: on
+
+inbound_services:
+- mail

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Five Minutes';
-  src: url('five.otf');
+  src: url('/fonts/five.otf');
 }
 
 body {
-  background-image: url(sunset-bg.png);
+  background-image: url('/images/sunset-bg.png');
   color: white;
   background-size: cover;
   font-family: 'Five Minutes';
