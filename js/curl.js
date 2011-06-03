@@ -29,7 +29,15 @@ $(document).ready(function() {
       $('#input-form').append("<p class='key-val-pair'><input type='text' class='param' value='param'/> <input type='text' class='value' value='value'/></p>");
   });
 
+  $('input').keyup(function(event) {
+    if (event.keyCode == 13) {
+      $('#submit').click();
+    }
+  });
+
   $('input').focus(function() {
-    $(this).val('');
+    if ($(this).attr('type') == 'text' && $(this).attr('class') == $(this).val()) {
+      $(this).val('');
+    }
   });
 });
