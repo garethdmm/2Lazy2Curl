@@ -14,18 +14,32 @@
 <div id='curl-base'>
   <div id='curl-splash'>
     <h1>2Lazy2Curl</h1>
-    <h2>Too lazy to curl? Post arbitrary data to any site with this form</h2>
-    <input id='url-input' type='text' value='http://google.com'/>
-    <input id='method-input' type='text' value='method (get or post)'/>
-
+    <h2>Curl is hard, and command lines are scary. Now you can make well-formed HTTP Get and POST requests straight from your browser<h2>
+    <p class='help'>1. Pick your target URL and HTTP method.</p>
+    <p id='targets-input'>
+      <input id='url-input' type='text' value='http://google.com/search'/>
+    </p>
+    <p id='method-input'>
+      Get <input name='method' type='radio'/> 
+      Post <input name='method' type='radio'/>
+    </p>
+    <p class='help'>2. Enter the parameters of the request.</p>
     <form id='input-form' method='post'>
       <p class='key-val-pair'>
         <input type='text' class='param' value='param'>
         <input type='text' class='value' value='value'/>
       </p>
+      <p class='key-val-pair'>
+        <input type='text' class='param' value='param'>
+        <input type='text' class='value' value='value'/>
+      </p>
+      <p class='key-val-pair'>
+        <input type='text' class='param' value='param'>
+        <input type='text' class='value' value='value'/>
+      </p>
     </form>
-    <a href='#' id='new-param'>New Param</a>
-    <a href='#' id='submit'>POST!</a>
+    <a href='#' id='new-param'>+</a>
+    <p>3) <a href='#' id='submit'>DO IT</a></p>
   </div>
 
   <form id='post-form'>

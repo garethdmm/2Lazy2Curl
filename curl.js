@@ -22,6 +22,6 @@ $(document).ready(function() {
 
   $('#new-param').click(
     function() {
-      $('#input-form').append("<p class='key-val-pair'><input type='text' class='param' value='param'/><input type='text' class='value' value='value'/></p>");
+      $('#input-form').append("<p class='key-val-pair'><input type='text' class='param' value='param'/> <input type='text' class='value' value='value'/></p>");
   });
 });
