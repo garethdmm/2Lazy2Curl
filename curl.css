@@ -1,0 +1,40 @@
+#curl-base {
+  width: 941px;
+  margin-left: auto;  
+  margin-right: auto;
+  padding-top: 20px;
+}
+
+#curl-splash {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  display: block;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30pt;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: larger;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#post-form {
+  display: none;
+}
+
+#submit, #new-param {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+}

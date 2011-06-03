@@ -1,0 +1,38 @@
+<html>
+<head>
+
+<link rel='stylesheet' type='text/css' href='reset.css'/>
+<link rel='stylesheet' type='text/css' href='curl.css'/>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script type='text/javascript' src='curl.js'></script>
+
+</head>
+
+<body>
+
+<div id='curl-base'>
+  <div id='curl-splash'>
+    <h1>2Lazy2Curl</h1>
+    <h2>Too lazy to curl? Post arbitrary data to any site with this form</h2>
+    <input id='url-input' type='text' value='http://google.com'/>
+    <input id='method-input' type='text' value='method (get or post)'/>
+
+    <form id='input-form' method='post'>
+      <p class='key-val-pair'>
+        <input type='text' class='param' value='param'>
+        <input type='text' class='value' value='value'/>
+      </p>
+    </form>
+    <a href='#' id='new-param'>New Param</a>
+    <a href='#' id='submit'>POST!</a>
+  </div>
+
+  <form id='post-form'>
+    <input type='submit' id='post-submit'/> 
+  </form>
+</div>
+</body>
+</html>
+
+
