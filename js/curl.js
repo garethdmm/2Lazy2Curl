@@ -28,4 +28,8 @@ $(document).ready(function() {
     function() {
       $('#input-form').append("<p class='key-val-pair'><input type='text' class='param' value='param'/> <input type='text' class='value' value='value'/></p>");
   });
+
+  $('input').focus(function() {
+    $(this).val('');
+  });
 });
