@@ -1,14 +1,27 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
 @font-face {
   font-family: 'Five Minutes';
   src: url('/fonts/five.otf');
 }
 
 body {
-  background-image: url('/images/sunset-bg.png');
-  color: white;
+  background-image: url('/images/sunset-bg-big.png');
   background-size: cover;
+  -moz-background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /*background-repeat: no-repeat;
+  background-position: center center;*/
+
+  color: white;
   font-family: 'Five Minutes';
   font-size: larger; 
+  height: 100%;
 }
 
 #curl-base {
@@ -59,7 +72,7 @@ p.help {
 #new-param {
   margin-left: 370px;
   margin-top: 5px;
-  font-size: 30pt;
+  font-size: 40pt;
   text-decoration: none;
 }
 
