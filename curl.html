@@ -10,9 +10,15 @@
 <script src="http://cdn.jquerytools.org/1.2.5/jquery.tools.min.js"></script>
 <script type='text/javascript' src='js/curl.js'></script>
 
+<!-- start Mixpanel -->
+<script type="text/javascript">var mpq=[];mpq.push(["init","84f36d4166c25e36d277b3740392ca4e"]);(function(){var b,a,e,d,c;b=document.createElement("script");b.type="text/javascript";b.async=true;b.src=(document.location.protocol==="https:"?"https:":"http:")+"//api.mixpanel.com/site_media/js/api/mixpanel.js";a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a);e=function(f){return function(){mpq.push([f].concat(Array.prototype.slice.call(arguments,0)))}};d=["track","track_links","track_forms","register","register_once","identify","name_tag","set_config"];for(c=0;c<d.length;c++){mpq[d[c]]=e(d[c])}})();
+</script>
+<!-- end Mixpanel -->
+
 <script type='text/javascript'>
-<!-- start Mixpanel --><script type="text/javascript">var mpq=[];mpq.push(["init","84f36d4166c25e36d277b3740392ca4e"]);(function(){var b,a,e,d,c;b=document.createElement("script");b.type="text/javascript";b.async=true;b.src=(document.location.protocol==="https:"?"https:":"http:")+"//api.mixpanel.com/site_media/js/api/mixpanel.js";a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a);e=function(f){return function(){mpq.push([f].concat(Array.prototype.slice.call(arguments,0)))}};d=["track","track_links","track_forms","register","register_once","identify","name_tag","set_config"];for(c=0;c<d.length;c++){mpq[d[c]]=e(d[c])}})();
-</script><!-- end Mixpanel -->
+  mpq.identify("USERNAME_HERE_OR_ANY_STRING")
+  mpq.track("Page View");
+  mpmetrics.track('visitor', {'val': 1});
 </script>
 
 <script type="text/javascript">
@@ -36,7 +42,7 @@
 
 <div id='curl-base'>
   <div id='curl-splash'>
-    <h1 class='tip-able' title='tooltip'>2Lazy2Curl</h1>
+    <h1 class='tip-able' title='tooltip'>2Lazy2Curl?</h1>
     <h2>Curl is hard, and command lines are scary. Now you can make well-formed HTTP Get and POST requests straight from your browser<h2>
     <p class='help'>1. Pick your target URL and HTTP method</p>
     <p id='targets-input'>

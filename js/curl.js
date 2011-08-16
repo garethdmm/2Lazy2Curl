@@ -26,6 +26,7 @@ $(document).ready(function() {
       $('#post-form').append(textInput(name, value));
     });
 
+    mpq.track("Submission");
     $('#post-submit').click();
   });
 
