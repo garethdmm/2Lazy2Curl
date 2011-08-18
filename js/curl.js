@@ -15,11 +15,7 @@ $(document).ready(function() {
   $('#submit').click(function() {
     url = $('#url-input').val();
 
-    $('input.method').each(function() {
-      if ($(this).attr('checked') == 'checked') {
-        $('#post-form').attr('method', $(this).attr('id'));
-      }
-    });
+  $('#post-form').attr('method', $('input.method:checked').attr('id'));
 
     $('#post-form').attr('action', url);
     
